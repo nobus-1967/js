@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Приветствие</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Привет</h1>
+    <p>Привет, <span id="name">незнакомец или незнакомка</span>!</p>
+    <script>
+        let strangerName = document.getElementById("name");
+        /* console.log(strangerName.innerHTML); */
+        let userName = prompt("Введите Ваше имя:");
+        strangerName.innerHTML = userName;
+
+    </script>
+</body>
+
+</html>
